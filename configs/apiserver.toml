@@ -1,5 +1,3 @@
 bind_addr=":8080"
 log_level="debug"
-
-[store]
 database_url = "user=david password=qwerty123 host=localhost dbname=bash_db"
