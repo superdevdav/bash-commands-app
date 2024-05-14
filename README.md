@@ -11,40 +11,6 @@
 ## Сущность команды (command.go)
 У структуры Command имеются следующие поля ID, Command_name, Result, Date_time. Решил добавить Date_time, т.к. это практичнее, например, у нас в БД есть одинаковые команды, следовательно нам нужна дата и время.
 
-## Структура проекта
-|--cmd
-|   |--apiserver
-|       |--main.go
-|--configs
-|   |--apiserver.toml
-|--internal
-|   |--app
-|       |--apiserver
-|       |   |--apiserver_internal_test.go
-|       |   |--apiserver.go
-|       |   |--config.go
-|       |   |--server.go
-|       |--model
-|       |   |--command_test.go
-|       |   |--command.go
-|       |   |--testing.go
-|       |--store
-|           |--sqlstore
-|           |   |--commandRepository_test.go
-|           |   |--commandRepository.go
-|           |   |--store_test.go
-|           |   |--store.go
-|           |   |--testing.go
-|           |--repository.go
-|           |--store.go
-|--migrations
-|   |--20240510000500_create_commands.down.sql
-|   |--20240510000500_create_commands.up.sql
-|--apiserver
-|--go.mod
-|--go.sum
-|--Makefile
-
 ## Про тесты
 Запуск тестов происходит командой make test.
 Тесты находятся в файлах:
